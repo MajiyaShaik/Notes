@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&family=Stick+No+Bills:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  height: 8vh;
+  background-color: #f3ce53;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+header h1{
+  color: maroon ;
+  font-weight: bold;
+  font-size: 1.4rem ;
+}
+#deleteall{
+  border-radius: 20px;
+  padding: 0.3rem 0.5rem;
+  width: 30%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 65, 65);
+  box-shadow: 2px 2px 5px 2px rgb(204, 44, 44);
+  border: none;
+}
+body{
+  background-color: #ffeb9b;
+}
+.NotesList{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 1rem;
+}
+.note{
+  background-color: rgb(240, 229, 229);
+  border: 0.5px solid grey;
+  margin: 0.7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+}
+.note h4{
+  font-size: 1.2rem;
+  color: rgb(160, 1, 1);
+}
+.note p{
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.note button{
+        margin-top: 0.5rem;
+        padding: 0.2rem 0.6rem;
+        font-size: 0.6rem;
+        font-weight: bold;
+        border-radius: 20px;
+        border: 0.7px solid darkgreen;
+        background-color:rgb(158, 211, 158);
+        color: rgb(163, 27, 27);
+        box-shadow: 2px 0 3px 0 rgb(7, 163, 7);
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        outline:none;
+}
+.note .btndiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right{
+  margin-left: 2rem;
+  height: 50vh;
+}
+.right h2{
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
+  color: darkred;
+  text-align: center;
+  margin-right: 2rem;
+}
+.createnote{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  margin-left: 15%;
+  margin-top: 2rem;
+}
+.createnote #title{
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+.createnote #textnote{
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#create{
+  border-radius: 20px;
+  padding: 0.4rem 0.5rem;
+  margin-top: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color:brown;
+  box-shadow: 2px 2px 5px 2px rgb(87, 63, 224);
+  border: none;
+  width: 50%;
+  align-self: center;
+  background-color:rgb(199, 199, 241);
+  margin-bottom: 1rem; 
+  outline: none;
+}
+@media screen and (min-width:700px) {
+  .right{
+    height: 100vh;
+  }
+  .createnote{
+    margin-left: 18%;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  
+header{
+  height: 14vh;
+  background-color: #f3ce53;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+header h1{
+  color: maroon ;
+  font-weight: bold;
+  font-size: 2.3rem ;
+}
+#deleteall{
+  border-radius: 20px;
+  padding: 0.5rem 0.8rem;
+  width: 15%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 65, 65);
+  box-shadow: 2px 2px 5px 2px rgb(204, 44, 44);
+  border: none;
+}
+body{
+  background-color: #ffeb9b;
+}
+body .div{
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.NotesList{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 1rem;
+}
+.note{
+  background-color: rgb(240, 229, 229);
+  border: 0.5px solid grey;
+  margin: 0.7rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  width:80%;
+  height: 280px;
+}
+.note h4{
+  font-size: 1.2rem;
+  color: rgb(160, 1, 1);
+}
+.note p{
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.note button{
+        margin-top: 1.5rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border-radius: 20px;
+        border: 0.7px solid darkgreen;
+        background-color:rgb(158, 211, 158);
+        color: rgb(163, 27, 27);
+        box-shadow: 2px 0 3px 0 rgb(7, 163, 7);
+        margin-bottom: 0.5rem; 
+        outline:none;   
+}
+.note .btndiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right{
+  margin-left: 2rem;
+  height: 100vh;
+}
+.right h2{
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: darkred;
+  text-align: center;
+}
+.createnote{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  margin-left: 20%;
+  margin-top: 2rem;
+}
+.createnote #title{
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+.createnote #textnote{
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#create{
+  border-radius: 20px;
+  padding: 0.5rem 0.8rem;
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:brown;
+  box-shadow: 2px 2px 5px 2px rgb(87, 63, 224);
+  border: none;
+  width: 60%;
+  align-self: center;
+  background-color:rgb(199, 199, 241);
+  margin-bottom: 0.7rem; 
+  outline: none;
+}
+}
